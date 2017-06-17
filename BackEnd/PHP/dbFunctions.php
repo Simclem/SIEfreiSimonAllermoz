@@ -15,16 +15,22 @@ function insertUser($nom, $prenom, $mail, $license, $mdp)
   $stmt->bindParam(':salt', ($salt));
   $stmt->execute();
 }
-function getUserByMailAndPass()
+function getUserByMailAndPass($mail, $pass)
 {
   $db =new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
-  $req = $db->prepare ("SELECT * FROM USERS") ;
-  $req->execute();
-  $res = $req->fetchAll(PDO::FETCH_ASSOC);
-  foreach ($res as $value) {
-    var_dump($value);
+  $req = $db->prepare ("SELECT * FROM USERS WHERE AdresseMail = ?") ;
+
+  $req->execute(array($mail));
+  if (empty($req))
+  {
+    return false;
   }
-  //var_dump($res);
+  else
+  {
+    $toCheckPassword = $req->fetchAll();
+    var_dump($toCheckPassword);
+  }
+
 }
 
 function resetDB()
@@ -94,13 +100,6 @@ function resetDB()
     $stmt->execute();
     $stmt = $db->prepare('INSERT INTO `assocuserevent`(`IdAssoc`, `idUser`, `idEvent`) VALUES (NULL,2,1);');
     $stmt->execute();
-
 }
-
-
-//getUserByMailAndPass();
-resetDB();
-
-
 
 ?>
