@@ -33,6 +33,28 @@ function getUserByMailAndPass($mail, $pass)
 
 }
 
+
+
+function getAllEvents()
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $res =$db->query( "SELECT * FROM `event`");
+  $obj = $res->fetchAll(PDO::FETCH_ASSOC);
+  $json = json_encode($obj);
+  print($json);
+
+
+
+/*
+  foreach ($obj as $row ) {
+    $json_output = json_encode($obj);
+  }
+  var_dump($json_output);
+*/
+}
+
+
+
 function resetDB()
 {
 
