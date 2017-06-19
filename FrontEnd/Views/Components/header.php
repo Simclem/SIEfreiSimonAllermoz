@@ -32,6 +32,7 @@
       </div>
       <div class="col-md-1">
         <div class="row">
+        </br>
           Notre partenaire
         </div>
         <div class="row">
@@ -67,12 +68,9 @@
 
                 <li><a href="./Evenements.php">Evènements</a></li>
 
-              <li><a href="#">Photos</a></li>
-              <li><a href="#">Reserver un court</a></li>
+              <li><a href="#">Albums Photos</a></li>
+              <li><a href="#">Réserver un court</a></li>
               <li><a href="#">Compétition</a></li>
-              <li><a href="#">Tarifs</a></li>
-              <li><a href="#">Reglements</a></li>
-              <li><a href="http://www.fft.fr/" target="_blank">La fédération</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li>
