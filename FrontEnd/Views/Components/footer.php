@@ -5,7 +5,7 @@
         <div class="col-md-offset-1 col-md-2">
           <a href ="./contact.php">Contacter</a>
           <br />
-            <a href ="./Acces.php">Accèder au club</a>
+            <a href ="./acces.php">Accèder au club</a>
             <br />
           <a href = "./Ecole.php">École de tennis</a>
           <br />

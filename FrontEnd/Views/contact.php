@@ -4,8 +4,8 @@
 
 <div class="row">
     <div class="container-fluid">
-        <div class="col-md-offset-5 col-md-2">
-            <h3><b> Nous Contacter </b></h3>
+        <div class="col-md-12">
+            <h3 style="text-align: center"><b> Nous Contacter </b></h3>
         </br></br>
         </div>
     </div>
