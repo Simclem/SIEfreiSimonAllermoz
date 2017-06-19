@@ -28,11 +28,19 @@ function getUserByMailAndPass($mail, $pass)
   else
   {
     $toCheckPassword = $req->fetchAll();
-    var_dump($toCheckPassword);
+
   }
 
 }
 
+function getAllUsers()
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $res =$db->query( "SELECT AdresseMail FROM USERS");
+  $obj = $res->fetchAll(PDO::FETCH_ASSOC);
+  $json = json_encode($obj);
+  print($json);
+}
 
 
 function getAllEvents()
@@ -42,15 +50,6 @@ function getAllEvents()
   $obj = $res->fetchAll(PDO::FETCH_ASSOC);
   $json = json_encode($obj);
   print($json);
-
-
-
-/*
-  foreach ($obj as $row ) {
-    $json_output = json_encode($obj);
-  }
-  var_dump($json_output);
-*/
 }
 
 
