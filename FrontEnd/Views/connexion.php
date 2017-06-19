@@ -3,10 +3,12 @@
 ?>
 
 <div class="row">
+  <div class="resultat">
+  </div>
     <form>
         <div class="col-md-offset-5 col-md-2">
             <label for="identifiantConnexion">Identifiant</label>
-            <input type="text" class="form-control" id="identifiantConnexion" placeholder="Entrer votre identifiant" required="required"><br>
+            <input type="email" class="form-control" id="identifiantConnexion" placeholder="Entrer votre identifiant" required="required"><br>
         </div>
         <div class="col-md-offset-5 col-md-2">
             <label for="motDePasseConnexion">Mot de passe</label>
@@ -22,7 +24,7 @@
     $(document).ready(function(){
         $("#submit").click(function(){
             $.post(
-                'getConnection.php',
+                '../../BackEnd/API/getConnection.php',
                 {
                     login : $("#identifiantConnexion").val(),
                     password : $("#motDePasseConnexion").val()
@@ -30,7 +32,7 @@
 
                 function(data){
 
-                    if(data == 'Success'){
+                    if(data == '0'){
                         $("#resultat").html("<p>Vous avez été connecté avec succès !</p>");
                     }
                     else{
