@@ -20,18 +20,19 @@
 <div class="row">
     <div class="container-fluid">
       <div class="col-md-1">
-        <img src="../Pictures/Logo.jpg" >
+          <a href="./index.php" target="_blank"><img src="../Pictures/Logo.jpg" ></a>
       </div>
       <div class="col-md-10">
         <div class="row">
           <h1 style ="text-align : center">Tennis Club</h1>
         </div>
         <div class="row">
-          <h3 style ="text-align : center">Bruyeres le Châtel</h3>
+          <h3 style ="text-align : center">Bruyères le Châtel</h3>
         </div>
       </div>
       <div class="col-md-1">
         <div class="row">
+        </br>
           Notre partenaire
         </div>
         <div class="row">
@@ -65,18 +66,15 @@
             <div class="row">
             <ul class="nav navbar-nav">
 
-                <li><a href="http://localhost/SIEfrei/SIEfreiSimonAllermoz/FrontEnd/Views/Evenements.php">Evènements</a></li>
+                <li><a href="./Evenements.php">Evènements</a></li>
 
-              <li><a href="#">Photos</a></li>
-              <li><a href="#">Reserver un court</a></li>
+              <li><a href="#">Albums Photos</a></li>
+              <li><a href="#">Réserver un court</a></li>
               <li><a href="#">Compétition</a></li>
-              <li><a href="#">Tarifs</a></li>
-              <li><a href="#">Reglements</a></li>
-              <li><a href="http://www.fft.fr/" target="_blank">La fédération</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="login.php">Connexion</a>
+                <a href="connexion.php">Connexion</a>
               </li>
             </ul>
           </div>
