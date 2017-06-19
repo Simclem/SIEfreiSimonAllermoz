@@ -28,6 +28,16 @@ function getUserByMailAndPass($mail, $pass)
   else
   {
     $toCheckPassword = $req->fetchAll();
+    var_dump($toCheckPassword);
+    foreach ($toCheckPassword as $row) {
+      $sel = $row['salt'];
+      $newPass = crypt( $pass, $sel);
+      $newReq = $db->prepare("SELECT * FROM USERS WHERE AdresseMail = ? AND password = ?");
+      $newReq->execute(array($mail, $newPass));
+      $resSecReq = $newReq->fetchAll();
+      print("<br /> ______________________________________________________ <br />");
+      var_dump($resSecReq);
+    }
 
   }
 

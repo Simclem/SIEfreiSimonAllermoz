@@ -2,5 +2,5 @@
   require_once("../PHP/dbFunctions.php");
 
 
-getAllUsers();
+getUserByMailAndPass("admin@gmail.com", "passAdmin");
 ?>
