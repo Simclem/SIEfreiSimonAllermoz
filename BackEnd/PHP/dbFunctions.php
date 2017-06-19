@@ -23,7 +23,7 @@ function getUserByMailAndPass($mail, $pass)
   $req->execute(array($mail));
   if (empty($req))
   {
-    return false;
+    print( false);
   }
   else
   {
