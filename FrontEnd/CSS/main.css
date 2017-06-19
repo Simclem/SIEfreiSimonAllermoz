@@ -1,7 +1,10 @@
 footer
 {
     margin-top: 20px;
-    background: lightgray;
+    background: #F8F8F8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 img#logoFFT{

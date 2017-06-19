@@ -3,7 +3,7 @@
     <div class ="row">
       <div class="container-fluid">
         <div class="col-md-offset-1 col-md-2">
-          <a href ="./Club.php">Contacter</a>
+          <a href ="./contact.php">Contacter</a>
           <br />
             <a href ="./Acces.php">Accèder au club</a>
             <br />

@@ -20,7 +20,7 @@
 <div class="row">
     <div class="container-fluid">
       <div class="col-md-1">
-          <a href="./index.php" target="_blank"><img src="../Pictures/Logo.jpg" ></a>
+          <a href="./index.php"><img src="../Pictures/Logo.jpg" ></a>
       </div>
       <div class="col-md-10">
         <div class="row">
