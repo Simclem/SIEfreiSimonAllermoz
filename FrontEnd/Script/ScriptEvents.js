@@ -1,6 +1,5 @@
-function setAllEventsInATab()
+window.onload = function setAllEventsInATab()
 {
-  console.log("je suis dans la fonction")
 
   $.ajax({
 
@@ -10,8 +9,12 @@ function setAllEventsInATab()
     success: function(data)
     {
 
-      console.log(data[0].Description);
+      console.log(data);
+      var contentPosition = document.getElementsByTagName('div')[15];
 
+
+      var table = document.createElement('table');
+      contentPosition.appendChild(table);
     }
   });
 }
