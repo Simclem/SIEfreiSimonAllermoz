@@ -3,7 +3,7 @@
 ?>
 <div class="content">
 </div>
-<script  type="text/javascript" src ="../Script/ScriptEvents.js"></script>
+<script  type="text/javascript" src ="../Script/ScriptEvents.php"></script>
 <div class="row">
   <div class="container-fluid">
     <div class="col-md-12">
@@ -29,6 +29,9 @@
         </td>
         <td>
           Photo
+        </td>
+        <td>
+          S'inscrire
         </td>
       </tr>
     </table>

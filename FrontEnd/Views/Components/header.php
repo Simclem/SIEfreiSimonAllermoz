@@ -10,12 +10,11 @@
       <link rel="stylesheet" type="text/css" href ="../CSS/main.css">
       <link rel="stylesheet" type="text/css" href ="../CSS/FontAwesome/css/font-awesome.min.css">
       <script  type="text/javascript" src ="../Script/jQuery/jquery-3.2.1.min.js"></script>
-      <script  type="text/javascript" src ="../Script/ScriptEvents.js"></script>
 
       <title>Tennis Club</title>
       <link rel="icon" href="../Pictures/Logo.jpg" />
   </head>
-  <body onload="setAllEventsInATab()">
+  <body>
 
 <div class="row">
     <div class="container-fluid">

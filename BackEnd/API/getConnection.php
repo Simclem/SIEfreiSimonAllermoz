@@ -1,9 +1,9 @@
 <?php
   require_once("../PHP/dbFunctions.php");
 
-if(isset($_POST['login'])  || isset($_POST['password'])  )
+if(empty($_POST['login'])  || empty($_POST['password'])  )
 {
-  print("false");
+  print(false);
 }
 else {
   getUserByMailAndPass($_POST['login'], $_POST['password']);

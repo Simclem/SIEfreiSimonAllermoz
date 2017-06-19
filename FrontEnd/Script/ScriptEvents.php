@@ -10,7 +10,8 @@ window.onload = function setAllEventsInATab()
     {
 
       var line = document.getElementsByTagName('tbody')[0];
-      var indiceTD = 7;
+      var indiceTD = 8;
+      //var indiceTD = 7;
       for(i = 0 ;i < data.length; i++)
       {
 
@@ -69,11 +70,23 @@ window.onload = function setAllEventsInATab()
           indiceTD+=1;
 
         }
+        else {
+          document.getElementsByTagName('td')[indiceTD].innerHTML = '<img src="../Picures/' +data[i].urlPhoto+'">' ;
+          indiceTD+=1;
+        }
+
+
+
+
+        var currentLine = document.getElementsByTagName('tr')[i+1];
+        newCell = document.createElement('td');
+        currentLine.appendChild(newCell);
+        document.getElementsByTagName('td')[indiceTD].innerHTML =<?php echo('"test"') ?>;
+        indiceTD+=1;
 
         //+6
       }
-      //var table = document.createElement('table');
-      //contentPosition.appendChild(table);
+
     }
   });
 }
