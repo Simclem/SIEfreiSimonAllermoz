@@ -17,27 +17,30 @@ function insertUser($nom, $prenom, $mail, $license, $mdp)
 }
 function getUserByMailAndPass($mail, $pass)
 {
+
   $db =new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
   $req = $db->prepare ("SELECT * FROM USERS WHERE AdresseMail = ?") ;
 
   $req->execute(array($mail));
   if (empty($req))
   {
-    print( false);
+    print(0);
   }
   else
   {
     $toCheckPassword = $req->fetchAll();
-    var_dump($toCheckPassword);
-    foreach ($toCheckPassword as $row) {
-      $sel = $row['salt'];
+
+      $sel = $toCheckPassword[0]['salt'];
       $newPass = crypt( $pass, $sel);
       $newReq = $db->prepare("SELECT * FROM USERS WHERE AdresseMail = ? AND password = ?");
       $newReq->execute(array($mail, $newPass));
-      $resSecReq = $newReq->fetchAll();
-      print("<br /> ______________________________________________________ <br />");
-      var_dump($resSecReq);
-    }
+      $resSecReq = $newReq->fetchAll(PDO::FETCH_ASSOC);
+      $tabReq = array();
+      $resSecReq[0]["password"] ="";
+      $resSecReq[0]["salt"]="";
+      return $resSecReq;
+
+
 
   }
 

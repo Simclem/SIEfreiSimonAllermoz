@@ -1,12 +1,20 @@
 <?php
   require_once("../PHP/dbFunctions.php");
 
-if(empty($_POST['login'])  || empty($_POST['password'])  )
+if(empty($_GET['login'])  || empty($_GET['password'])  )
 {
-  print(false);
+  print(0);
 }
 else {
-  getUserByMailAndPass($_POST['login'], $_POST['password']);
+  $returnResult = getUserByMailAndPass($_GET['login'], $_GET['password']);
+  if($returnResult == false)
+  {
+    print(0);
+  }
+  else {
+    $json = json_encode($returnResult);
+    print($json);
+  }
 }
 
 ?>
