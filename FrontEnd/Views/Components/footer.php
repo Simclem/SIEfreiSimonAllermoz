@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-4">
         <div class="container-fluid">
-          Facebook : <a href ="https://facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          Facebook : <a href ="https://www.facebook.com/TennisClubBruyeresLeChatel/?ref=aymt_homepage_panel" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
         </div>
         </div>
     </div>
