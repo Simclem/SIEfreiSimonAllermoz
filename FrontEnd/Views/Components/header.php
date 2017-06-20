@@ -71,7 +71,7 @@
 
             <?php
             if (empty($_SESSION["IdUser"])){
-                ?> "<ul class="nav navbar-nav navbar-right">
+                ?> <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="connexion.php">Connexion</a>
                             </li>
@@ -85,7 +85,7 @@
                                 <a><?php echo($_SESSION["Prenom"])?></a>
                             </li>
                             <li>
-                                <a href="deconnexion.php">Déconnexion</a>
+                                <a href="../../BackEnd/API/deconnexion.php">Déconnexion</a>
                             </li>
                         </ul><?php
                 }
