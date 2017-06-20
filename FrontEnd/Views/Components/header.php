@@ -85,7 +85,7 @@
                                 <a><?php echo($_SESSION["Prenom"])?></a>
                             </li>
                             <li>
-                                <a href="deconnexion.php">Déconnexion</a>
+                                <a href="../../BackEnd/API/deconnexion.php">Déconnexion</a>
                             </li>
                         </ul><?php
                 }

@@ -1,5 +1,9 @@
 <?php
     include ("./Components/header.php");
+    if (!empty($_SESSION["IdUser"])){
+        echo "<script>alert(\"Vous êtes déja connecté.\")</script>";
+        echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
+    }
 ?>
 
 <script  type="text/javascript" src ="../Script/ScriptInsertUser.js"></script>
