@@ -44,10 +44,11 @@ function insertAssoc($idU, $idE)
 }
 
 
-//SELECT DISTINCT event.NomEvent, event.Description, event.Date, event.Heure, event.Duree FROM `assocuserevent` INNER JOIN event on event.idEvent = assocuserevent.idEvent WHERE assocuserevent.idUser
 function getMyEvent($idU)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db =new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+
   $req = $db->prepare ('SELECT DISTINCT event.NomEvent, event.Description, event.Date, event.Heure, event.Duree FROM `assocuserevent` INNER JOIN event on event.idEvent = assocuserevent.idEvent WHERE assocuserevent.idUser = ?') ;
   $req ->execute(array($idU));
   $result = $req->fetchAll(PDO::FETCH_ASSOC);
