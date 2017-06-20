@@ -52,7 +52,9 @@ function insertEvent()
       data : { nameEvent : $nameEvent, Descr : $Description, dateE : $DateEvent, HeureE : $HeureEvent, Duree : $Duree, url :$urlPhoto },
       success : function()
       {
-
+        document.getElementById('toHide').style.display = 'none';
+        document.getElementById('displayError').style.display = 'none';
+        document.getElementById('displayConnect').style.display = 'block';
       },
     })
   }
