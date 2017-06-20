@@ -1,6 +1,8 @@
 <?php
     include ("./Components/header.php");
 ?>
+<script  type="text/javascript" src ="../Script\ScriptInsertEvent.js"></script>
+
 <div class="col-md-offset-5 col-md-2">
     <label for="Nom">Nom de l'évènement</label>
     <input type="text" class="form-control" id="Nom" placeholder="Entrer le nom de l'évènement" required="required"><br>
@@ -26,7 +28,7 @@
       <input type="text" class="form-control" id="urlPhoto" placeholder="URL de la photo"required="required"><br>
   </div>
 <div class="col-md-offset-5 col-md-2">
-    <button type="submit" class="btn btn-primary" id="submit" onclick="insertUser()">S'inscrire</button>
+    <button type="submit" class="btn btn-primary" id="submit" onclick="insertEvent()">S'inscrire</button>
 </div>
 
 <?php
