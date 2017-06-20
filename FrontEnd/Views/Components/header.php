@@ -71,7 +71,7 @@
 
             <?php
             if (empty($_SESSION["IdUser"])){
-                ?> "<ul class="nav navbar-nav navbar-right">
+                ?> <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="connexion.php">Connexion</a>
                             </li>
