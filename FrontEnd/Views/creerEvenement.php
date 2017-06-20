@@ -11,7 +11,7 @@
 </div>
 <div class="col-md-offset-5 col-md-2">
     <label for="DateEvent">Date</label>
-    <input type="date" class="form-control" id="DateEvent" placeholder="Entrer votre adresse e-mail" required="required"><br>
+    <input type="date" class="form-control" id="DateEvent" placeholder="Entrer la date de l'évènement" required="required"><br>
 </div>
 <div class="col-md-offset-5 col-md-2">
     <label for="HeureEvent">Heure</label>
