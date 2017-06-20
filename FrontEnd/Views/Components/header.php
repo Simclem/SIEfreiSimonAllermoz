@@ -65,7 +65,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="./Evenements.php">Evènements</a></li>
               <li><a href="#">Albums Photos</a></li>
-              <li><a href="#">Réserver un court</a></li>
+              <li><a href="./reserverUnCourt.php">Réserver un court</a></li>
               <li><a href="#">Compétition</a></li>
             </ul>
 
