@@ -1,12 +1,22 @@
 <?php
   include ("./Components/header.php");
 ?>
-<div class="content">
+<div class="row">
+    <div class="container-fluid">
+        <div class="col-md-offset-2 col-md-8">
+            <h3 style="text-align: center"><b> Les évènements </b></h3>
+            </br></br></br>
+        </div>
+        <div class="col-md-2" style="text-align: center">
+            <a class="btnCreateEvent" href="creerEvenement.php"><button  type="button" class="btn btn-primary"> Créer un évènement </button></a></br></br>
+            <a class="btnCreateEvent" href="modifierEvenement.php"><button type="button" class="btn btn-primary"> Modifier un évènement </button></a>
+        </div>
+    </div>
 </div>
 <script  type="text/javascript" src ="../Script/ScriptEvents.php"></script>
 <div class="row">
   <div class="container-fluid">
-    <div class="col-md-12">
+    <div class="col-md-offset-1 col-md-10">
     <table>
       <tr>
         <td>

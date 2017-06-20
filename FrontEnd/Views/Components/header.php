@@ -46,7 +46,6 @@
 
   <div class="row" >
     <div class="container-fluid">
-
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,21 +63,34 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <div class="row">
             <ul class="nav navbar-nav">
-
                 <li><a href="./Evenements.php">Evènements</a></li>
-
               <li><a href="#">Albums Photos</a></li>
               <li><a href="#">Réserver un court</a></li>
               <li><a href="#">Compétition</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="connexion.php">Connexion</a>
-              </li>
-              <li>
-                <a href="inscription.php">Inscription</a>
-              </li>
-            </ul>
+
+            <?php
+            if (empty($_SESSION["IdUser"])){
+                ?> "<ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="connexion.php">Connexion</a>
+                            </li>
+                            <li>
+                                <a href="inscription.php">Inscription</a>
+                            </li>
+                        </ul><?php
+                } else {
+                    ?><ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a><?php echo($_SESSION["Prenom"])?></a>
+                            </li>
+                            <li>
+                                <a href="deconnexion.php">Déconnexion</a>
+                            </li>
+                        </ul><?php
+                }
+            ?>
+
           </div>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
