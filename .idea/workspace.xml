@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489c7a8c-ac27-40db-b06a-130644187357" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/Views/ecoleDeTennis.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/Views/competition.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/Components/footer.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/Components/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/reglement.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/reglement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/tarif.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/tarif.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ecoleDeTennis.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ecoleDeTennis.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Views/ecoleDeTennis.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
@@ -77,11 +80,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="acces.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/acces.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/Components/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+              <folding>
+                <marker date="1497992466000" expanded="true" signature="2645:2686" ph="..." />
+                <marker date="1497992466000" expanded="true" signature="2782:2823" ph="..." />
+                <marker date="1497992466000" expanded="true" signature="3046:3080" ph="..." />
+                <marker date="1497992466000" expanded="true" signature="3186:3227" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tarif.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/tarif.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="181" column="72" lean-forward="false" selection-start-line="181" selection-start-column="72" selection-end-line="181" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#10;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reglement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reglement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="209" column="41" lean-forward="false" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
+              <folding>
+                <element signature="e#20562#20589#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="albumsPhotos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="competition.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/competition.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/contact.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="acces.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/acces.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -114,14 +186,16 @@
         <option value="$PROJECT_DIR$/BackEnd/PHP/dbFunctions.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/connexion.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/inscription.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Views/reglement.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Views/tarif.php" />
         <option value="$PROJECT_DIR$/FrontEnd/CSS/main.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/Evenements.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/Components/footer.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/ecoleDeTennis.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/tarif.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/reglement.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/competition.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" />
       </list>
     </option>
   </component>
@@ -432,12 +506,12 @@
       <updated>1497782312492</updated>
       <workItem from="1497782317105" duration="4623000" />
       <workItem from="1497823033556" duration="768000" />
-      <workItem from="1497857130403" duration="31597000" />
+      <workItem from="1497857130403" duration="32060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36988000" />
+    <option name="totallyTimeSpent" value="37451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -496,10 +570,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1497965650000" expanded="true" signature="2612:2653" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="2749:2790" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="3013:3047" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="3153:3194" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="2645:2686" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="2782:2823" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="3046:3080" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="3186:3227" ph="..." />
           </folding>
         </state>
       </provider>
@@ -535,14 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -589,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reglement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Views/inscription.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -604,14 +662,6 @@
           <folding>
             <marker date="1497951046000" expanded="true" signature="1938:1967" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/tarif.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,19 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/Components/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="48" />
-          <folding>
-            <marker date="1497965650000" expanded="true" signature="2612:2653" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="2749:2790" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="3013:3047" ph="..." />
-            <marker date="1497965650000" expanded="true" signature="3153:3194" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/PHP/dbFunctions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -697,14 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/acces.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -751,6 +780,71 @@
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/tarif.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="181" column="72" lean-forward="false" selection-start-line="181" selection-start-column="72" selection-end-line="181" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#10;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reglement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="209" column="41" lean-forward="false" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
+          <folding>
+            <element signature="e#20562#20589#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/acces.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/competition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/Components/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+          <folding>
+            <marker date="1497992466000" expanded="true" signature="2645:2686" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="2782:2823" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="3046:3080" ph="..." />
+            <marker date="1497992466000" expanded="true" signature="3186:3227" ph="..." />
           </folding>
         </state>
       </provider>
