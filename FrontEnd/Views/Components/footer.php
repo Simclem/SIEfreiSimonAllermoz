@@ -7,7 +7,7 @@
           <br />
             <a href ="./acces.php">Accèder au club</a>
             <br />
-          <a href = "./Ecole.php">École de tennis</a>
+          <a href = "./ecoleDeTennis.php">École de tennis</a>
           <br />
           <a href = "./tarif.php">Tarifs</a>
           <br />
