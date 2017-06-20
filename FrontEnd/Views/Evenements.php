@@ -1,9 +1,29 @@
 <?php
   include ("./Components/header.php");
-  echo('<input type="hidden" id="idU" value ='.$_SESSION["IdUser"].'>');
+
+
+  if (!empty($_SESSION["isAdmin"]))
+  {
+    echo('<input type="hidden" id="idU" value ='.$_SESSION["IdUser"].'>');
+  }
+  else {
+    echo('<input type="hidden" id="idU" value = 0 >');
+  }
+
+
 ?>
+
+
+
 <div class="row">
+  <div class="container-fluid">
+      <div class="col-md-offset-4 col-md-4">
+          <div class="alert alert-success" role="alert" id="displayConnect" style="display: none; text-align: center">Vous êtes connecté.</div>
+          <div class="alert alert-danger" role="alert" id="displayError" style="display: none; text-align: center">Vous n'êtes pas connectés, impossible de vous inscrire.</div>
+      </div>
+  </div>
     <div class="container-fluid">
+
         <div class="col-md-offset-2 col-md-8">
             <h3 style="text-align: center"><b> Les évènements </b></h3>
             </br></br></br>

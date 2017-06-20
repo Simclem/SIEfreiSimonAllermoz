@@ -1,3 +1,4 @@
+
 window.onload = function setAllEventsInATab()
 {
 
@@ -8,14 +9,16 @@ window.onload = function setAllEventsInATab()
     dataType:'json',
     success: function(data)
     {
-
+      var idUser = document.getElementById('idU').value;
+      var toremove = document.getElementById('idU');
+      toremove.parentNode.removeChild(document.getElementById('idU'));
       var line = document.getElementsByTagName('tbody')[0];
       var indiceTD = 8;
-      //var indiceTD = 7;
+
       for(i = 0 ;i < data.length; i++)
       {
 
-        //console.log(i);
+
         newLine = document.createElement('tr');
         line.appendChild(newLine);
 
@@ -81,13 +84,39 @@ window.onload = function setAllEventsInATab()
         var currentLine = document.getElementsByTagName('tr')[i+1];
         newCell = document.createElement('td');
         currentLine.appendChild(newCell);
-        document.getElementsByTagName('td')[indiceTD].innerHTML =<?php echo('"test"') ?>;
+        document.getElementsByTagName('td')[indiceTD].innerHTML ="<button  type=\"button\" class=\"btn btn-primary\" onclick=\"inscription("+idUser+","+data[i].idEvent+")\"> S\'inscrire </button>";
         indiceTD+=1;
 
-        //+6
+
       }
 
     }
   });
+
+}
+
+function inscription(idUser, idEvent)
+{
+  console.log(idUser);
+  console.log(idEvent);
+  if (idUser == 0)
+  {
+    document.getElementById('displayError').style.display = 'block';
+    document.getElementById('displayConnect').style.display = 'none';
+  }
+  else {
+    $.ajax({
+      type : 'POST',
+      datatype : "application/json",
+      url:'../../BackEnd/API/inscriptionEvent.php',
+      data : {idu : idUser, ide : idEvent},
+      success : function()
+      {
+      },
+      error: function(jqXHR, status, error) {
+      }
+    });
+
+  }
 
 }

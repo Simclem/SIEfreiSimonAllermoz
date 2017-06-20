@@ -8,7 +8,7 @@
     print("{'result': 'false'}");
   }
   else {
-    insertEvent($_POST['idu'],$_POST['ide']);
+    insertAssoc($_POST['idu'],$_POST['ide']);
   }
 
 ?>
