@@ -33,7 +33,6 @@ function insertEvent($nom, $desc, $date, $heure, $duree, $url)
 
 
 
-
 function insertAssoc($idU, $idE)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
@@ -45,7 +44,15 @@ function insertAssoc($idU, $idE)
 }
 
 
-
+//SELECT DISTINCT event.NomEvent, event.Description, event.Date, event.Heure, event.Duree FROM `assocuserevent` INNER JOIN event on event.idEvent = assocuserevent.idEvent WHERE assocuserevent.idUser
+function getMyEvent($idU)
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $req = $db->prepare ('SELECT DISTINCT event.NomEvent, event.Description, event.Date, event.Heure, event.Duree FROM `assocuserevent` INNER JOIN event on event.idEvent = assocuserevent.idEvent WHERE assocuserevent.idUser = ?') ;
+  $req ->execute(array($idU));
+  $result = $req->fetchAll(PDO::FETCH_ASSOC);
+  return $result;
+}
 
 
 function getUserByMailAndPass($mail, $pass)
