@@ -30,6 +30,24 @@ function insertEvent($nom, $desc, $date, $heure, $duree, $url)
   $req->execute();
 }
 
+
+
+
+
+function insertAssoc($idU, $idE)
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $req = $db->prepare('INSERT INTO `assocuserevent`(`IdAssoc`, `idUser`, `idEvent`) VALUES (NULL,:u,:e)');
+  $req->bindParam(':u', htmlspecialchars($idU));
+
+  $req->bindParam(':e', htmlspecialchars($idE));
+  $req->execute();
+}
+
+
+
+
+
 function getUserByMailAndPass($mail, $pass)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
