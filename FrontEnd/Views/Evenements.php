@@ -2,7 +2,7 @@
   include ("./Components/header.php");
 
 
-  if (!empty($_SESSION["isAdmin"]))
+  if (!empty($_SESSION["IdUser"]))
   {
     echo('<input type="hidden" id="idU" value ='.$_SESSION["IdUser"].'>');
   }
