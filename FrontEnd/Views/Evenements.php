@@ -1,5 +1,6 @@
 <?php
   include ("./Components/header.php");
+  echo('<input type="hidden" id="idU" value ='.$_SESSION["IdUser"].'>');
 ?>
 <div class="row">
     <div class="container-fluid">
@@ -8,6 +9,8 @@
             </br></br></br>
         </div>
         <?php
+          if (!empty($_SESSION["isAdmin"]))
+          {
             if ($_SESSION["isAdmin"] == 1){
                 ?>
                 <div class="col-md-2" style="text-align: center">
@@ -16,10 +19,12 @@
                 </div>
                 <?php
             }
+          }
+
         ?>
     </div>
 </div>
-<script  type="text/javascript" src ="../Script/ScriptEvents.php"></script>
+<script  type="text/javascript" src ="../Script/ScriptEvents.js"></script>
 <div class="row">
   <div class="container-fluid">
     <div class="col-md-offset-1 col-md-10">
