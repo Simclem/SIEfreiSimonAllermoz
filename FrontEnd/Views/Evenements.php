@@ -79,6 +79,44 @@
   </div>
   </div>
 </div>
+
+<br />
+<br />
+<?php if (!empty($_SESSION["IdUser"]))
+{
+
+
+
+?>
+<div class="row">
+    <div class="container-fluid">
+  <div class="col-md-offset-1 col-md-10">
+    <table>
+      <tr>
+        <td>
+          Numéro de l'évènement
+        </td>
+        <td>
+          Nom de l'évènement
+        </td>
+        <td>
+          Description
+        </td>
+        <td>
+          Date
+        </td>
+        <td>
+          Heure
+        </td>
+        <td>
+          Durée
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+<?php } ?>
 <!--<div class="Content" onload="setAllEventsInATab()">
 </div>-->
 

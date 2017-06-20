@@ -89,7 +89,7 @@ window.onload = function setAllEventsInATab()
 
 
       }
-
+      getMyEvent(idUser);
     }
   });
 
@@ -119,6 +119,24 @@ function inscription(idUser, idEvent)
       }
     });
 
+  }
+
+}
+
+
+function getMyEvent($idUser)
+{
+  if($idUser != 0)
+  {
+    $.ajax({
+      url : '../../BackEnd/API/getAllEvents.php?idU='+$idUser,
+      type:'GET',
+      dataType:'json',
+      success: function(data)
+      {
+
+      }
+    })
   }
 
 }
