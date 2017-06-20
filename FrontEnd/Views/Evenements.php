@@ -18,7 +18,7 @@
 <div class="row">
   <div class="container-fluid">
       <div class="col-md-offset-4 col-md-4">
-          <div class="alert alert-success" role="alert" id="displayConnect" style="display: none; text-align: center">Vous êtes connecté.</div>
+          <div class="alert alert-success" role="alert" id="displayConnect" style="display: none; text-align: center">Vous êtes inscrit à l'évenement.</div>
           <div class="alert alert-danger" role="alert" id="displayError" style="display: none; text-align: center">Vous n'êtes pas connectés, impossible de vous inscrire.</div>
       </div>
   </div>

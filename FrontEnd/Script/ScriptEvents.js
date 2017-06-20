@@ -112,6 +112,8 @@ function inscription(idUser, idEvent)
       data : {idu : idUser, ide : idEvent},
       success : function()
       {
+        document.getElementById('displayError').style.display = 'none';
+        document.getElementById('displayConnect').style.display = 'block';
       },
       error: function(jqXHR, status, error) {
       }
