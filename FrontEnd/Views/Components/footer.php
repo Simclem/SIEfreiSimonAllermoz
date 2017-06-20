@@ -16,7 +16,7 @@
         <div class="col-md-offset-1 col-md-2">
         <div class="container-fluid">
             </br>
-          Tout le code est disponible sur github : <a href ="https://github.com/Simclem/SIEfreiSimonAllermoz/"><i class="fa fa-github" aria-hidden="true"></i> </a>
+          Tout le code est disponible sur github : <a href ="https://github.com/Simclem/SIEfreiSimonAllermoz/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
         </br>
             ©️ TC Bruyères le Châtel
         </div>
