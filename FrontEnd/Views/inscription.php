@@ -1,6 +1,11 @@
 <?php
     include ("./Components/header.php");
 ?>
+
+<script  type="text/javascript" src ="../Script/ScriptInsertUser.js"></script>
+
+
+
 <div class="row">
   <div class="resultat">
   </div>
@@ -30,7 +35,7 @@
         <input type="password" class="form-control" id="confirmationMotDePasseConnexion" placeholder="Confirmer votre mot de passe"required="required"><br>
     </div>
   <div class="col-md-offset-5 col-md-2">
-      <button type="submit" class="btn btn-primary" id="submit">S'inscrire</button>
+      <button type="submit" class="btn btn-primary" id="submit" onclick="insertUser()">S'inscrire</button>
   </div>
 
 </div>
