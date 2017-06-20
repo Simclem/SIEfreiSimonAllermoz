@@ -179,7 +179,7 @@
 </div>
 <div class="row">
     <div class="container-fluid">
-        <div class="col-md-offset-1 col-md-6">
+        <div class="col-md-offset-1 col-md-6" style="margin-bottom: 40px">
             <p>
                 <b>PACK DE 5 INVITATIONS</b>
             </p>
