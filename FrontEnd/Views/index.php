@@ -7,7 +7,7 @@
 <div class="row">
   <div class="col-lg-offset-4">
     <div class="slideshow">
-      <ul class="rslides">
+      <ul class="rslides" style ="list-style-type: none;">
         <li><img src="../Pictures/image_0.jpg" alt=""></li>
         <li><img src="../Pictures/image_1.png" alt=""></li>
         <li><img src="../Pictures/image_2.png" alt=""></li>
