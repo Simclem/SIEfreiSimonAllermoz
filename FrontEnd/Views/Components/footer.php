@@ -9,7 +9,7 @@
             <br />
           <a href = "./Ecole.php">École de tennis</a>
           <br />
-          <a href = "./Tarif.php">Tarifs</a>
+          <a href = "./tarif.php">Tarifs</a>
           <br />
           <a href = "./reglement.php">Règlement</a>
         </div>
