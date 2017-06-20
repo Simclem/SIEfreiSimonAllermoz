@@ -11,7 +11,7 @@
           <br />
           <a href = "./Tarif.php">Tarifs</a>
           <br />
-          <a href = "./Reglements.php">Règlement</a>
+          <a href = "./reglement.php">Règlement</a>
         </div>
         <div class="col-md-offset-1 col-md-2">
         <div class="container-fluid">

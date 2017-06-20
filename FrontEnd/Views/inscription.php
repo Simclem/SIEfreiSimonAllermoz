@@ -19,12 +19,16 @@
   </div>
   <div class="col-md-offset-5 col-md-2">
       <label for="numL">Numéro de license</label>
-      <input type="text" class="form-control" id="numL" placeholder="Entrer votre numéro license" required="required"><br>
+      <input type="text" class="form-control" id="numL" placeholder="Entrer votre numéro de license" required="required"><br>
   </div>
   <div class="col-md-offset-5 col-md-2">
       <label for="motDePasseConnexion">Mot de passe</label>
       <input type="password" class="form-control" id="motDePasseConnexion" placeholder="Entrer votre mot de passe"required="required"><br>
   </div>
+    <div class="col-md-offset-5 col-md-2">
+        <label for="confirmationMotDePasseConnexion">Confimation du mot de passe</label>
+        <input type="password" class="form-control" id="confirmationMotDePasseConnexion" placeholder="Confirmer votre mot de passe"required="required"><br>
+    </div>
   <div class="col-md-offset-5 col-md-2">
       <button type="submit" class="btn btn-primary" id="submit">S'inscrire</button>
   </div>

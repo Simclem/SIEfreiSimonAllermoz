@@ -3,7 +3,7 @@ window.onload = function setAllEventsInATab()
 
   $.ajax({
 
-    url: 'http://localhost/SIEfrei/SIEfreiSimonAllermoz/BackEnd/API/getAllEvents.php',
+    url: '../../BackEnd/API/getAllEvents.php',
     type : 'GET',
     dataType:'json',
     success: function(data)
@@ -89,4 +89,5 @@ window.onload = function setAllEventsInATab()
 
     }
   });
+
 }

@@ -25,7 +25,7 @@
         $("#submit").click(function(){
           console.log('http://localhost/SIEfrei/SIEfreiSimonAllermoz/BackEnd/API/getConnection.php?login='+document.getElementById('identifiantConnexion').value+'&password='+document.getElementById('motDePasseConnexion').value);
           $.ajax({
-            url :'http://localhost/SIEfrei/SIEfreiSimonAllermoz/BackEnd/API/getConnection.php?login='+document.getElementById('identifiantConnexion').value+'&password='+document.getElementById('motDePasseConnexion').value,
+            url :'../../BackEnd/API/getConnection.php?login='+document.getElementById('identifiantConnexion').value+'&password='+document.getElementById('motDePasseConnexion').value,
             type : 'GET',
             dataType:'json',
             success : function(data)
