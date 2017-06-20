@@ -1,8 +1,8 @@
 <?php
 function insertUser($nom, $prenom, $mail, $license, $mdp)
 {
-  $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
-  //$db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
 
   $stmt = $db->prepare("INSERT INTO `users`(`IdUser`, `Nom`, `Prenom`, `AdresseMail`, `NumLicense`, `password`, `salt`, `isAdmin`) VALUES (NULL,:nom,:prenom,:mail,:license,:pass,:salt,0)");
   $salt =mcrypt_create_iv(32, MCRYPT_DEV_URANDOM);
@@ -16,10 +16,24 @@ function insertUser($nom, $prenom, $mail, $license, $mdp)
   $stmt->bindParam(':salt', ($salt));
   $stmt->execute();
 }
+
+function insertEvent($nom, $desc, $date, $heure, $duree, $url)
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $req = $db->prepare('INSERT INTO `event`(`idEvent`, `NomEvent`, `Description`, `Date`, `Heure`, `Duree`, `urlPhoto`) VALUES (NULL,:name,:descr,:dateEvent,:heureDep,:dur,:url)');
+  $req->bindParam(':name', htmlspecialchars($nom));
+  $req->bindParam(':descr', htmlspecialchars($desc));
+  $req->bindParam(':dateEvent', htmlspecialchars($date));
+  $req->bindParam(':heureDep', htmlspecialchars($heure));
+  $req->bindParam(':dur', htmlspecialchars($duree));
+  $req->bindParam(':url', htmlspecialchars($url));
+  $req->execute();
+}
+
 function getUserByMailAndPass($mail, $pass)
 {
-  //$db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
-  $db =new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db =new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
   $req = $db->prepare ("SELECT * FROM USERS WHERE AdresseMail = ?") ;
 
   $req->execute(array($mail));
@@ -49,8 +63,8 @@ function getUserByMailAndPass($mail, $pass)
 
 function getAllUsers()
 {
-  //$db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
-  $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
   $res =$db->query( "SELECT AdresseMail FROM USERS");
   $obj = $res->fetchAll(PDO::FETCH_ASSOC);
   $json = json_encode($obj);
@@ -60,8 +74,8 @@ function getAllUsers()
 
 function getAllEvents()
 {
-        //$db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
-        $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+        $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+        //$db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
         $res =$db->query( "SELECT * FROM `event`");
         $obj = $res->fetchAll(PDO::FETCH_ASSOC);
         $json = json_encode($obj);
@@ -76,8 +90,8 @@ function getAllEvents()
 function resetDB()
 {
 
-    $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
-    //$db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+    //$db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+    $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
 
     $stmt = $db->prepare("DROP TABLE users");
     $stmt->execute();
