@@ -89,7 +89,7 @@ window.onload = function setAllEventsInATab()
 
 
       }
-      getMyEvent(idUser);
+      getMyEvent(idUser, indiceTD, data.length+1);
     }
   });
 
@@ -124,17 +124,71 @@ function inscription(idUser, idEvent)
 }
 
 
-function getMyEvent($idUser)
+function getMyEvent($idUser, $indiceTD, sizeFirstTab)
 {
   if($idUser != 0)
   {
     $.ajax({
-      url : '../../BackEnd/API/getAllEvents.php?idU='+$idUser,
+      url : '../../BackEnd/API/getMyEvents.php?idU='+$idUser,
       type:'GET',
       dataType:'json',
       success: function(data)
       {
+        console.log(data);
+        var line = document.getElementsByTagName('tbody')[1];
 
+        var indiceTD = $indiceTD+6;
+
+        for (i = 0 ; i < data.length ; i ++)
+        {
+          newLine = document.createElement('tr');
+          line.appendChild(newLine);
+
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].idEvent;
+          indiceTD+=1;
+
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].NomEvent;
+          indiceTD+=1;
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Description;
+          indiceTD+=1;
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Date;
+          indiceTD+=1;
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Heure;
+          indiceTD+=1;
+
+          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
+          console.log(currentLine)
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Duree;
+          indiceTD+=1;
+
+        }
       }
     })
   }
