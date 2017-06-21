@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="489c7a8c-ac27-40db-b06a-130644187357" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FrontEnd/Views/competition.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/reglement.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/reglement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/tarif.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/tarif.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php" afterPath="$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Views/Components/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
@@ -91,6 +86,16 @@
                 <marker date="1497992466000" expanded="true" signature="3046:3080" ph="..." />
                 <marker date="1497992466000" expanded="true" signature="3186:3227" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reserverUnCourt.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="219" lean-forward="false" selection-start-line="17" selection-start-column="219" selection-end-line="17" selection-end-column="219" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,7 +192,6 @@
         <option value="$PROJECT_DIR$/FrontEnd/Views/connexion.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/inscription.php" />
         <option value="$PROJECT_DIR$/FrontEnd/CSS/main.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/Evenements.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/Components/footer.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/ecoleDeTennis.php" />
@@ -196,6 +200,7 @@
         <option value="$PROJECT_DIR$/FrontEnd/Views/albumsPhotos.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/competition.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Views/Components/header.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php" />
       </list>
     </option>
   </component>
@@ -506,12 +511,12 @@
       <updated>1497782312492</updated>
       <workItem from="1497782317105" duration="4623000" />
       <workItem from="1497823033556" duration="768000" />
-      <workItem from="1497857130403" duration="32060000" />
+      <workItem from="1497857130403" duration="32379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37451000" />
+    <option name="totallyTimeSpent" value="37770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -670,16 +675,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-          <folding>
-            <element signature="e#380#406#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,6 +841,14 @@
             <marker date="1497992466000" expanded="true" signature="3046:3080" ph="..." />
             <marker date="1497992466000" expanded="true" signature="3186:3227" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Views/reserverUnCourt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="219" lean-forward="false" selection-start-line="17" selection-start-column="219" selection-end-line="17" selection-end-column="219" />
+          <folding />
         </state>
       </provider>
     </entry>
