@@ -29,3 +29,18 @@ p{
     text-align: justify;
     text-justify: inter-word;
 }
+
+table {
+    display: block;
+    margin: auto;
+    border: thin solid Black;
+    width: 100%;
+}
+
+td, th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: thin solid Gray;
+    width: 12.5%;
+    text-align: center;
+}
