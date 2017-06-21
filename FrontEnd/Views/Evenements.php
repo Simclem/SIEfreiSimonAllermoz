@@ -111,6 +111,9 @@
         <td>
           Durée
         </td>
+        <td>
+          Désinscrire
+        </td>
       </tr>
     </table>
   </div>

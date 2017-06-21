@@ -88,6 +88,10 @@ window.onload = function setAllEventsInATab()
         indiceTD+=1;
 
 
+
+
+
+
       }
       getMyEvent(idUser, indiceTD, data.length+1);
     }
@@ -134,10 +138,9 @@ function getMyEvent($idUser, $indiceTD, sizeFirstTab)
       dataType:'json',
       success: function(data)
       {
-        console.log(data);
         var line = document.getElementsByTagName('tbody')[1];
 
-        var indiceTD = $indiceTD+6;
+        var indiceTD = $indiceTD+7;
 
         for (i = 0 ; i < data.length ; i ++)
         {
@@ -146,51 +149,65 @@ function getMyEvent($idUser, $indiceTD, sizeFirstTab)
 
 
           var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].idEvent;
           indiceTD+=1;
 
 
-          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].NomEvent;
           indiceTD+=1;
 
-          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Description;
           indiceTD+=1;
 
-          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
+
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Date;
           indiceTD+=1;
 
-          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
+
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Heure;
           indiceTD+=1;
 
-          var currentLine = document.getElementsByTagName('tr')[sizeFirstTab+i+1]
-          console.log(currentLine)
+
           newCell = document.createElement('td');
           currentLine.appendChild(newCell);
           document.getElementsByTagName('td')[indiceTD].innerHTML = data[i].Duree;
           indiceTD+=1;
+
+
+          newCell = document.createElement('td');
+          currentLine.appendChild(newCell);
+          document.getElementsByTagName('td')[indiceTD].innerHTML ="<button  type=\"button\" class=\"btn btn-primary\" onclick=\"desInscription("+$idUser+","+data[i].idEvent+")\"> Se désinscrire </button>";
+          indiceTD+=1;
+
 
         }
       }
     })
   }
 
+}
+function desInscription( $idU, $ide)
+{
+  $.ajax({
+    url : '../../BackEnd/API/deleteAAssoc.php?idu='+$idU+'&ide='+$ide,
+    type:'GET',
+    dataType:'json',
+
+    success : function()
+    {
+
+    },
+    error: function(jqXHR, status, error) {
+    }
+  });
 }

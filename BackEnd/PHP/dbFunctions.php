@@ -55,6 +55,18 @@ function getMyEvent($idU)
   return $result;
 }
 
+function deleteanAssoc($idU, $ide)
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db =new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+
+  $req = $db->prepare ('DELETE FROM `assocuserevent` WHERE idUser = ? and idEvent = ?') ;
+  $req ->execute(array($idU , $ide));
+  $result = $req->fetchAll(PDO::FETCH_ASSOC);
+  return $result;
+}
+
+
 
 function getUserByMailAndPass($mail, $pass)
 {
