@@ -53,7 +53,7 @@ function insertEvent()
       success : function()
       {
         document.getElementById('toHide').style.display = 'none';
-        document.getElementById('displayError').style.display = 'none';
+        //document.getElementById('displayError').style.display = 'none';
         document.getElementById('displayConnect').style.display = 'block';
       },
     })

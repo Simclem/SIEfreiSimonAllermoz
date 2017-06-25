@@ -8,7 +8,7 @@
     print("{'result': 'false'}");
   }
   else {
-    deleteanAssoc($_GET['ide'],$_GET['idu']);
+    deleteanAssoc($_GET['idu'],$_GET['ide']);
   }
 
 ?>
