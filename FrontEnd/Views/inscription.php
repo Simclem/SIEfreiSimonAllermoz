@@ -11,8 +11,13 @@
 
 
 <div class="row">
-  <div class="resultat">
+  <div class="container-fluid">
+      <div class="col-md-offset-4 col-md-4">
+          <div class="alert alert-success" role="alert" id="displayConnect" style="display: none; text-align: center">Vous êtes inscrit .</div>
+      </div>
   </div>
+  <div id="toHide">
+
 
   <div class="col-md-offset-5 col-md-2">
       <label for="Nom">Nom</label>
@@ -41,7 +46,7 @@
   <div class="col-md-offset-5 col-md-2">
       <button type="submit" class="btn btn-primary" id="submit" onclick="insertUser()">S'inscrire</button>
   </div>
-
+</div>
 </div>
 
 <?php

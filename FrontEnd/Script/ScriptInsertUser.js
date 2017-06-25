@@ -54,7 +54,9 @@ function insertUser()
 
   if (error == false)
   {
-
+    document.getElementById('toHide').style.display = 'none';
+    //document.getElementById('displayError').style.display = 'none';
+    document.getElementById('displayConnect').style.display = 'block';
     $.ajax({
       type : 'POST',
       datatype : "application/json",
@@ -62,6 +64,7 @@ function insertUser()
       data : { nom : $nom, prenom : $prenom, add : $adresseemail, NumLicense : $numL, pass : $motDePasseConnexion},
       success : function()
       {
+
       },
       error: function(jqXHR, status, error) {
       }
