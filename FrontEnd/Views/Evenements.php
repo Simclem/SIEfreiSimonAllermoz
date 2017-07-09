@@ -48,7 +48,10 @@
 <div class="row">
   <div class="container-fluid">
     <div class="col-md-offset-1 col-md-10">
-    <table>
+      <div class="panel panel-default">
+      <div class="panel-body">
+
+    <table class="table">
       <tr>
         <td>
           Numéro de l'évènement
@@ -80,6 +83,13 @@
   </div>
 </div>
 
+
+
+
+
+</div>
+</div>
+
 <br />
 <br />
 <?php if (!empty($_SESSION["IdUser"]))
@@ -91,7 +101,9 @@
 <div class="row">
     <div class="container-fluid">
   <div class="col-md-offset-1 col-md-10">
-    <table>
+    <div class="panel panel-default">
+    <div class="panel-body">
+    <table class="table">
       <tr>
         <td>
           Numéro de l'évènement
@@ -117,6 +129,8 @@
       </tr>
     </table>
   </div>
+</div>
+</div>
 </div>
 </div>
 <?php } ?>
