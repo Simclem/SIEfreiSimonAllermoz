@@ -146,3 +146,11 @@ CREATE TABLE `album` (
 `titre` varchar(32) NOT NULL,
 PRIMARY KEY (`idAlbum`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+CREATE TABLE `photos` (
+ `idPhotos` int(11) NOT NULL AUTO_INCREMENT,
+ `link` varchar(32) NOT NULL,
+    `idAlbum` int(11) NOT NULL,
+ PRIMARY KEY (`idPhotos`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
