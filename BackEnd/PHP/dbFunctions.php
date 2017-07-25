@@ -120,9 +120,15 @@ function getAllEvents()
         $obj = $res->fetchAll(PDO::FETCH_ASSOC);
         $json = json_encode($obj);
         print($json);
-
-
-
+}
+function getAllAlbums()
+{
+        $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+        //$db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+        $res =$db->query( "SELECT * FROM `album` desc");
+        $obj = $res->fetchAll(PDO::FETCH_ASSOC);
+        $json = json_encode($obj);
+        print($json);
 }
 
 

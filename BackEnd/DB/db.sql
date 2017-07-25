@@ -147,6 +147,9 @@ CREATE TABLE `album` (
 PRIMARY KEY (`idAlbum`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
+INSERT INTO `album`(`idAlbum`, `titre`) VALUES (NULL,"test")
+INSERT INTO `album`(`idAlbum`, `titre`) VALUES (NULL,"test 1")
+INSERT INTO `album`(`idAlbum`, `titre`) VALUES (NULL,"test 2")
 
 CREATE TABLE `photos` (
  `idPhotos` int(11) NOT NULL AUTO_INCREMENT,
