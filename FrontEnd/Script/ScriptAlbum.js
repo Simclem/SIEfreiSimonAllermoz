@@ -23,7 +23,7 @@ window.onload = function setAllAlbums()
         newCell = document.createElement('td');
         newCell.style.border = "none";
         currentLine.appendChild(newCell);
-        document.getElementsByTagName('td') [indiceTD].innerHTML = "<a href=photo.php?idAlbum="+data[i].idAlbum+">" + data[i].titre + "</a>"
+        document.getElementsByTagName('td') [indiceTD].innerHTML = "<a href=PhotosInAlbum.php?idAlbum="+data[i].idAlbum+">" + data[i].titre + "</a>"
         indiceTD+=1;
       }
     }
