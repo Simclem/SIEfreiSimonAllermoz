@@ -67,6 +67,23 @@ function getMyEvent($idU)
   return $result;
 }
 
+
+
+
+
+
+function getPhotosOfThisAlbum($idAlbum)
+{
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  //$db =new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+
+  $req = $db->prepare ('SELECT * FROM `photos` WHERE idAlbum = ?') ;
+  $req ->execute(array($idAlbum));
+  $result = $req->fetchAll(PDO::FETCH_ASSOC);
+  return $result;
+}
+
+
 function deleteanAssoc($idU, $ide)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
