@@ -21,7 +21,7 @@
             if ($_SESSION["isAdmin"] == 1){
                 ?>
                 <div class="col-md-2" style="text-align: center">
-                    <a class="btnCreateEvent" href="creerEvenement.php"><button  type="button" class="btn btn-primary"> Créer un album </button></a></br></br>
+                    <a class="btnCreateEvent" href="creerAlbum.php"><button  type="button" class="btn btn-primary"> Créer un album </button></a></br></br>
                   <!--  <a class="btnCreateEvent" href="modifierEvenement.php"><button type="button" class="btn btn-primary"> Modifier un évènement </button></a>-->
                 </div>
                 <?php

@@ -46,6 +46,16 @@ function insertAssoc($idU, $idE)
 }
 
 
+function insertAlbum($nom)
+{
+  //  $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $req = $db->prepare('INSERT INTO `album`(`idAlbum`, `titre`) VALUES (NULL,:n)');
+  $req->bindParam(':n', htmlspecialchars($nom));
+  $req->execute();
+}
+
+
 function getMyEvent($idU)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
