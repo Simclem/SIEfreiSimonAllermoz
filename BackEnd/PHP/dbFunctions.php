@@ -56,6 +56,22 @@ function insertAlbum($nom)
 }
 
 
+
+
+
+function insertPhotoInAlbum($link,$idAlbum,$description )
+{
+  //  $db = new PDO('mysql:host=localhost:8889;dbname=siefreiprojet', 'root', 'root');
+  $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
+  $req = $db->prepare('INSERT INTO `photos`(`idPhotos`, `link`, `idAlbum`, `Description`) VALUES (NULL,:linkphoto,:idAlb,:descr)');
+  $req->bindParam(':linkphoto', htmlspecialchars($link));
+  $req->bindParam(':idAlb', htmlspecialchars($idAlbum));
+  $req->bindParam(':descr', htmlspecialchars($description));
+  $req->execute();
+}
+
+
+
 function getMyEvent($idU)
 {
   $db = new PDO('mysql:host=localhost:3306;dbname=siefreiprojet', 'root', '');
