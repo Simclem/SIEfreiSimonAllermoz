@@ -154,6 +154,7 @@ INSERT INTO `album`(`idAlbum`, `titre`) VALUES (NULL,"test 2")
 CREATE TABLE `photos` (
  `idPhotos` int(11) NOT NULL AUTO_INCREMENT,
  `link` varchar(32) NOT NULL,
-    `idAlbum` int(11) NOT NULL,
+ `idAlbum` int(11) NOT NULL,
+ `Description` varchar(32) DEFAULT NULL,
  PRIMARY KEY (`idPhotos`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1
