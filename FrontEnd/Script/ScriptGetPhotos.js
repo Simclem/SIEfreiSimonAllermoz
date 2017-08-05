@@ -85,7 +85,7 @@ window.onload = function getPhotos() {
                     i += 1;
 
                 }
-                if ((data.length - i) > 4) {
+                if ((data.length - i) >= 4) {
                     var newDiv = document.createElement('div');
                     newDiv.className = 'row';
                     CurrentPosition.appendChild(newDiv);
