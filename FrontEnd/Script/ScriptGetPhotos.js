@@ -14,12 +14,6 @@ window.onload = function getPhotos() {
             var idCol = 0;
             var currentCol;
             var CurrentPosition = document.getElementsByTagName('div')[15];
-            console.log(data);
-            console.log(data[0]);
-            console.log(data[0].idPhotos);
-            console.log((i - data.length))
-            console.log(document.getElementsByTagName('div')[15])
-
             while (i < data.length) {
                 if ((data.length - i) == 1) {
                     var newDiv = document.createElement('div');
