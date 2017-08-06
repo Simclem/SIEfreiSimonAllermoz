@@ -19,7 +19,7 @@
       <input type="text" class="form-control" id="Titre" placeholder="Entrer le commentaire de votre photo (optionnel)" required="required"><br>
   </div>
   <div class="col-md-offset-5 col-md-2">
-      <button type="submit" class="btn btn-primary" id="submit" onclick="insertPhoto()">S'inscrire</button>
+      <button type="submit" class="btn btn-primary" id="submit" onclick="insertPhoto()">Ajouter</button>
   </div>
 </div>
 <?php
