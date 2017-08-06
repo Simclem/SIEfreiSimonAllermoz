@@ -12,11 +12,11 @@
 
   <div class="col-md-offset-5 col-md-2">
       <label for="Nom">Nom de la photo</label>
-      <input type="text" class="form-control" id="Titre" placeholder="Entrer le nom de la photo" required="required"><br>
+      <input type="text" class="form-control" id="NomPhoto" placeholder="Entrer le nom de la photo" required="required"><br>
   </div>
     <div class="col-md-offset-5 col-md-2">
       <label for="Nom">Commentaire de la photo</label>
-      <input type="text" class="form-control" id="Titre" placeholder="Entrer le commentaire de votre photo (optionnel)" ><br>
+      <input type="text" class="form-control" id="Description" placeholder="Entrer le commentaire de votre photo (optionnel)" ><br>
   </div>
   <div class="col-md-offset-5 col-md-2">
       <button type="submit" class="btn btn-primary" id="submit" onclick="insertPhoto()">Ajouter</button>
